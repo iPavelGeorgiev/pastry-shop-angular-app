@@ -1,0 +1,26 @@
+<header>
+   <nav class="center">
+      <div class="logo">
+         <img src="../../assets/logo.png" alt="logo">
+      </div>
+      <div class="menu">
+         <button class="nav-button" mat-button>Home</button>
+         <button class="nav-button" mat-button>About</button>
+         <button class="nav-button" mat-button>Order Online</button>
+         <button class="nav-button" mat-button>Reviews</button>
+         <button class="nav-button" mat-button [matMenuTriggerFor]="profile">Profile</button>
+         <mat-menu #profile="matMenu">
+            <button class="nav-button" mat-menu-item>Login</button>
+            <button class="nav-button" mat-menu-item>Register</button>
+         </mat-menu>
+         <span class="cart">
+            <!-- <mat-icon class="mat-icon" matBadgeSize="small" matBadge="0" matBadgeColor="warn">shopping_cart
+            </mat-icon> -->
+            <i matBadgeSize="small" matBadge="0" matBadgeColor="warn" class="fas fa-shopping-cart"></i>
+            <span class="cdk-visually-hidden">
+               shopping cart icon
+            </span>
+         </span>
+      </div>
+   </nav>
+</header>
