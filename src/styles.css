@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+   font: 100%/1.5rem Roboto, "Helvetica Neue", sans-serif;
+   color: #333;
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+body {
+   height: 100vh;
+}
+
+p {
+   letter-spacing: 0.05rem;
+   margin-bottom: 1rem;
+}
+
+/* Utilities */
+.center {
+   max-width: 1280px;
+   margin: 0 auto;
+}
