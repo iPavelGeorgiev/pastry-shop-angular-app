@@ -1,0 +1,45 @@
+p {
+   margin-bottom: 0;
+}
+
+footer {
+   box-shadow: 0 0 20px 0 rgba(50,50,50,.3);
+   padding: 1rem;
+   text-align: center;
+}
+
+footer h3 {
+   color: #642714;
+   font-size: 1.15rem;
+   letter-spacing: .05rem;
+   font-weight: 700;
+   margin-bottom: 0.8rem;
+}
+
+.follow-us {
+   margin-bottom: 2rem;
+}
+
+.follow-us a {
+   margin: 0 0.5rem;
+   cursor: pointer;
+}
+
+.follow-us a:hover {
+   color: #642714;
+}
+
+.details-section {
+   display: flex;
+   justify-content: space-between;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.copyright {
+   margin-top: 2rem;
+   color: #642714;
+   font-size: 1.15rem;
+   font-weight: 700;
+   letter-spacing: 0;
+}
