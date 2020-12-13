@@ -1,0 +1,23 @@
+.pros-container {
+   background-color: #f7f7f7;
+   margin-bottom: 3rem;
+}
+
+.pros {
+   display: flex;
+   justify-content: space-around;
+   padding: 2rem 0;
+}
+
+.pro {
+   flex-basis: 30%;
+   text-align: center;
+}
+
+.pro .title {
+   margin-bottom: 1rem;
+}
+
+.pro p {
+   font-size: 0.8rem;
+}
