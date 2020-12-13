@@ -1,0 +1,38 @@
+.new-products {
+   margin-bottom: 3rem;
+}
+
+.title {
+   text-align: center;
+   color: #642714;
+   font-size: 2rem;
+   margin-bottom: 3rem;
+}
+
+.group-new-products {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.product {
+   flex-basis: 30%;
+}
+
+.product .product-name {
+   text-align: center;
+   color: #642714;
+   margin-bottom: 1rem;
+}
+
+.product .image-container {
+   width: 100%;
+   height: auto;
+   margin-bottom: 2.5rem;
+}
+
+.product .image-container img {
+   height: auto;
+   width: 100%;
+   box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
+}
