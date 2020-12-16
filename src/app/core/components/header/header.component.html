@@ -4,18 +4,21 @@
          <img src="../../assets/logo.png" alt="logo">
       </div>
       <div class="menu">
-         <button class="nav-button" mat-button>Home</button>
+         <button class="nav-button" mat-button routerLink="/">Home</button>
          <button class="nav-button" mat-button>About</button>
          <button class="nav-button" mat-button>Order Online</button>
          <button class="nav-button" mat-button>Reviews</button>
          <button class="nav-button" mat-button [matMenuTriggerFor]="profile">Profile</button>
          <mat-menu #profile="matMenu">
-            <button class="nav-button" mat-menu-item>Login</button>
-            <button class="nav-button" mat-menu-item>Register</button>
+            <ng-container *ngIf="!isSignedIn;else ifSignedIn">
+               <button class="nav-button" mat-menu-item routerLink="/auth/sign-in">Sign In</button>
+               <button class="nav-button" mat-menu-item routerLink="/auth/sign-up">Sign Up</button>
+            </ng-container>
+            <ng-template #ifSignedIn>
+               <button class="nav-button" mat-menu-item (click)="signOut()">Sign Out</button>
+            </ng-template>
          </mat-menu>
-         <span class="cart">
-            <!-- <mat-icon class="mat-icon" matBadgeSize="small" matBadge="0" matBadgeColor="warn">shopping_cart
-            </mat-icon> -->
+         <span class="cart" *ngIf="isSignedIn">
             <i matBadgeSize="small" matBadge="0" matBadgeColor="warn" class="fas fa-shopping-cart"></i>
             <span class="cdk-visually-hidden">
                shopping cart icon
