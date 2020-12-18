@@ -1,0 +1,31 @@
+<section class="container center">
+   <h2 class="section-header">CART</h2>
+   <ng-container *ngIf="cartProducts.length;else emptyCart">
+      <div class="cart-row">
+         <span class="cart-item cart-header cart-column">ITEM</span>
+         <span class="cart-price cart-header cart-column">PRICE</span>
+         <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+         <div class="cart-row" *ngFor="let cartProduct of cartProducts">
+            <div class="cart-item cart-column">
+               <img class="cart-item-image" [src]="cartProduct.imgUrl" width="100" height="100">
+               <span class="cart-item-title">{{cartProduct.name}}</span>
+            </div>
+            <span class="cart-price cart-column">{{cartProduct.price}} Lv.</span>
+            <div class="cart-quantity cart-column">
+               <input class="cart-quantity-input" type="number" [value]="cartProduct.quantity" (change)="quantityChange($event, cartProduct.id)">
+               <button class="btn-item" mat-flat-button color="warn" (click)="removeFromCart(cartProduct.id)">REMOVE</button>
+            </div>
+         </div>
+      </div>
+      <div class="cart-total">
+         <strong class="cart-total-title">Total:</strong>
+         <span class="cart-total-price">{{total}} Lv.</span>
+      </div>
+      <button class="btn-purchase" mat-flat-button color="primary" (click)="makeAnOrder()">PURCHASE</button>
+   </ng-container>
+   <ng-template #emptyCart>
+      <h3 class="empty-cart-heading">Cart is empty . . .</h3>
+   </ng-template>
+</section>
