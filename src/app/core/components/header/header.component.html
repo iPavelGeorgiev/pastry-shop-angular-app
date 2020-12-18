@@ -6,7 +6,7 @@
       <div class="menu">
          <button class="nav-button" mat-button routerLink="/">Home</button>
          <button class="nav-button" mat-button>About</button>
-         <button class="nav-button" mat-button>Order Online</button>
+         <button class="nav-button" mat-button routerLink="/products">Order Online</button>
          <button class="nav-button" mat-button>Reviews</button>
          <button class="nav-button" mat-button [matMenuTriggerFor]="profile">Profile</button>
          <mat-menu #profile="matMenu">
@@ -19,7 +19,7 @@
             </ng-template>
          </mat-menu>
          <span class="cart" *ngIf="isSignedIn">
-            <i matBadgeSize="small" matBadge="0" matBadgeColor="warn" class="fas fa-shopping-cart"></i>
+            <i matBadgeSize="small" matBadge={{cartProducts}} matBadgeColor="warn" class="fas fa-shopping-cart" routerLink="/cart"></i>
             <span class="cdk-visually-hidden">
                shopping cart icon
             </span>
