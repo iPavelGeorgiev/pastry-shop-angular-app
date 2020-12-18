@@ -1,0 +1,20 @@
+.container {
+   position: relative;
+   margin-bottom: 20rem;
+}
+
+.section-header {
+   text-align: center;
+   color: #642714;
+   font-size: 2.5rem;
+   letter-spacing: 3px;
+   margin: 4rem 0 6rem 0;
+}
+
+.products {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+   justify-items: center;
+   grid-gap: 20px;
+   grid-row-gap: 20px;
+}

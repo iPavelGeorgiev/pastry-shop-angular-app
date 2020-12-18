@@ -15,6 +15,15 @@ const routes: Routes = [
     path: 'auth',
     loadChildren: () => import('./features/auth/auth.module').then(m => m.AuthModule),
     ...canActivate(redirectLoggedInToHomepage)
+  },
+  { 
+    path: 'products',
+    loadChildren: () => import('./features/products/products.module').then(m => m.ProductsModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./features/shopping-cart/shopping-cart.module').then(m => m.ShoppingCartModule),
+    ...canActivate(redirectUnauthorizedToSignIn)
   }
 ];
 
