@@ -23,4 +23,10 @@ p {
 .center {
    max-width: 1280px;
    margin: 0 auto;
+   padding: 0 1.5rem;
+}
+
+.snackbar-message {
+   background-color: #642714;
+   color: #fff;
 }

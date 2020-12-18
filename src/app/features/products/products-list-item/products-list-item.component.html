@@ -1,0 +1,19 @@
+<div class="product">
+   <img [src]="product.imgUrl" alt="product image">
+   <div class="content">
+      <div class="row">
+         <div class="details">
+            <span>{{product.name}}</span>
+            <p>Some Text</p>
+         </div>
+         <div class="price">{{product.price}} Lv.</div>
+      </div>
+      <div class="buttons">
+         <!-- <button>View Details</button> -->
+         <button class="cart-btn" (click)="addToCart(product.id)" *ngIf="uid;else signIn">Add to Cart</button>
+         <ng-template #signIn>
+            <button class="cart-btn" routerLink="/auth/sign-in">Sign In to Order</button>
+         </ng-template>
+      </div>
+   </div>
+</div>
