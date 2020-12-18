@@ -19,10 +19,11 @@ nav {
 }
 
 .cart {
-   color: #642714;
+   color: #7c2d15;
    cursor: pointer;
 }
 
 .cart i {
    font-size: 1.5rem;
+   outline: none;
 }
