@@ -7,7 +7,7 @@
          <button class="nav-button" mat-button routerLink="/">Home</button>
          <button class="nav-button" mat-button>About</button>
          <button class="nav-button" mat-button routerLink="/products">Order Online</button>
-         <button class="nav-button" mat-button>Reviews</button>
+         <button class="nav-button" mat-button routerLink="/reviews">Reviews</button>
          <button class="nav-button" mat-button [matMenuTriggerFor]="profile">Profile</button>
          <mat-menu #profile="matMenu">
             <ng-container *ngIf="!isSignedIn;else ifSignedIn">

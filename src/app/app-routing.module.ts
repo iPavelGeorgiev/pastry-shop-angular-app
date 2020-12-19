@@ -24,6 +24,10 @@ const routes: Routes = [
     path: 'cart',
     loadChildren: () => import('./features/shopping-cart/shopping-cart.module').then(m => m.ShoppingCartModule),
     ...canActivate(redirectUnauthorizedToSignIn)
+  },
+  {
+    path: 'reviews',
+    loadChildren: () => import('./features/reviews/reviews.module').then(m => m.ReviewsModule)
   }
 ];
 
