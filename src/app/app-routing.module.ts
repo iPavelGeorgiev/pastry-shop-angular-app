@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { canActivate, redirectLoggedInTo, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
+import { NotFoundComponent } from './core/components/not-found/not-found.component';
 
 const redirectUnauthorizedToSignIn = () => redirectUnauthorizedTo(["/auth/sign-in"]);
 const redirectLoggedInToHomepage = () => redirectLoggedInTo("/");
@@ -29,7 +30,8 @@ const routes: Routes = [
     path: 'reviews',
     loadChildren: () => import('./features/reviews/reviews.module').then(m => m.ReviewsModule)
   },
-  { path: 'about-us', loadChildren: () => import('./features/about-us/about-us.module').then(m => m.AboutUsModule) }
+  { path: 'about-us', loadChildren: () => import('./features/about-us/about-us.module').then(m => m.AboutUsModule) },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
