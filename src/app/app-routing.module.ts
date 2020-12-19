@@ -28,7 +28,8 @@ const routes: Routes = [
   {
     path: 'reviews',
     loadChildren: () => import('./features/reviews/reviews.module').then(m => m.ReviewsModule)
-  }
+  },
+  { path: 'about-us', loadChildren: () => import('./features/about-us/about-us.module').then(m => m.AboutUsModule) }
 ];
 
 @NgModule({
