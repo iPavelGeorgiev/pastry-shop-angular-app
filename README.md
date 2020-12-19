@@ -1,27 +1,66 @@
-# PastryShopAngularApp
+# Pastry Shop
+## How to Run Project Locally
+1. Open the pastebin link and copy the code: https://pastebin.com/YZhLd44h
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+2. Create env.ts file in /src/environments and paste the code from pastebin there
 
-## Development server
+3. Type in the terminal the following:
+```bash
+npm install
+```
+4. Start the project by typing in the terminal the following:
+```bash
+ng serve --open
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Project Dependencies
+- Angular's default CLI dependencies
+- Angular Material
+- Firebase
+- SweetAlert2
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## List of all functionalities
+1. Sign In
+2. Sign Up
+3. Sign Out
+4. Add Cart Product
+5. Remove Cart Product
+6. Make An Order
+7. Add Review
+8. Edit Review
+9. Remove Review
+10. Sort Review By Timestamp
+11. Soft Products By Timestamp
 
-## Build
+## Routing
+Route | Description
+------|------------|
+/ | Public home page
+/about-us | About us page
+/products | Public or private products page
+/reviews | Public or private Reviews page
+/cart | Private user cart page
+/auth/sign-in | Public sign in page
+/auth/sign-up | Public sign up page
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## DATA API
 
-## Running unit tests
+###### User
+> - **email**: Email
+> - **password**: Password
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+###### Product
+> - **name**: Product name
+> - **price**: Product price
+> - **imgUrl**: Product image
+> - **timestamp**: Product timestamp
 
-## Running end-to-end tests
+###### Review
+> - **userEmail**: User Email
+> - **text**: Review text
+> - **timestamp**: Review timestamp
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+###### Cart Item
+> - **productId**: Product id
+> - **quantity**: Product quantity
