@@ -1,0 +1,10 @@
+<section class="center">
+   <h1 class="section-header">Reviews</h1>
+   <div class="border"></div>
+
+   <button *ngIf="user" class="add-review-btn" mat-flat-button color="primary" (click)="writeReview()">Write Review</button>
+
+   <div class="reviews">
+      <app-review *ngFor="let review of reviews" [review]="review"></app-review>
+   </div>
+</section>

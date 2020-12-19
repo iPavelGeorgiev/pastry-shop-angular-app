@@ -1,0 +1,41 @@
+form {
+   display: block;
+   width: 20rem;
+   margin: 0 auto;
+}
+
+form .mat-form-field {
+   width: 100%;
+}
+
+.section-header {
+   text-align: center;
+   color: #642714;
+   font-size: 2.5rem;
+   letter-spacing: 3px;
+   margin: 4rem 0;
+}
+
+.border{
+   width: 160px;
+   height: 5px;
+   background: #000000;
+   margin: 26px auto;
+}
+
+.add-review-btn {
+   display: block;
+   margin: 2.5rem auto 5rem auto;
+   font-size: 1.5em;
+   padding: 0.8rem 1.3rem;
+   letter-spacing: 2px;
+   background-color: #642714;
+}
+
+.reviews{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+   justify-items: center;
+   grid-gap: 20px;
+   grid-row-gap: 20px;
+}
