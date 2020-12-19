@@ -1,0 +1,21 @@
+.review{
+   padding: 1rem;
+   text-align: center;
+   background: #fff;
+}
+
+.review img{
+   width: 6.2rem;
+   height: 6.2rem;
+   /* border-radius: 50%; */
+}
+
+.review .email{
+   text-transform: uppercase;
+   margin: 20px 0;
+}
+
+.review .stars{
+   color: #6ab04c;
+   margin-bottom: 20px;
+}

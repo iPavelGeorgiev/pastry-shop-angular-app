@@ -1,0 +1,13 @@
+<mat-card class="review">
+   <img src="assets/quotation-mark.png" alt="quotation mark image">
+   <h4 class="email">{{review.userEmail}}</h4>
+   <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+   </div>
+   <p>{{review.text}}</p>
+   <button *ngIf="review.id === review.currentId" class="btn-item" mat-flat-button color="warn" (click)="deleteReview(review.id)">REMOVE</button>
+</mat-card>
