@@ -1,0 +1,67 @@
+/* shared */
+.section-title {
+   text-align: center;
+   color: #642714;
+   font-size: 2rem;
+   margin-bottom: 3rem;
+}
+
+
+/* about us */
+.about-us {
+   margin-bottom: 3rem;
+}
+
+.about-us .image-container {
+   height: 40rem;
+   width: 100%;
+   margin-bottom: 3rem;
+}
+
+.about-us .image-container img {
+   height: 100%;
+   width: 100%;
+}
+
+.new-products {
+   margin-bottom: 3rem;
+}
+
+
+/* our chefs */
+.our-chefs {
+   margin-bottom: 3rem;
+}
+
+.group-chefs {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.chef {
+   flex-basis: 30%;
+}
+
+.chef .chef-name {
+   text-align: center;
+   color: #642714;
+   margin-bottom: 1rem;
+}
+
+.chef .image-container {
+   width: 100%;
+   height: auto;
+   margin-bottom: 2.5rem;
+}
+
+.chef .image-container img {
+   height: auto;
+   width: 100%;
+   box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
+}
+
+/* shop location */
+.shop-location {
+   margin-bottom: 3rem;
+}
